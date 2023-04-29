@@ -950,7 +950,7 @@ input:focus:-ms-input-placeholder {
   padding: 72px 24px 24px;
   position: absolute;
   width: 408px;
-  height: 584px;
+  /* height: 584px; */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scaleY(1);

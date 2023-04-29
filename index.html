@@ -23,7 +23,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
     <!--fonts end-->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
   </head>
   <body>
     <!-- Header section -->
@@ -54,14 +57,77 @@
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-contacts-item">
+          <li class="header-contacts-item tel">
             <a class="link contacts-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+              >+38 (096) 111 11 11</a
             >
           </li>
         </ul>
+        <!-- MOB MENU -->
         </address>
+        <button type="button" data-menu-open class="menu-open-btn">
+          <svg class="menu-open-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-open-menu"></use></svg>
+        </button>
     </div>
+    <div class="mob-menu is-hidden" data-menu>
+      <div>
+        <button type="button" data-menu-close class="menu-close-btn">
+          <svg class="menu-close-btn-icon">
+            <use href="./images/modal/icons.svg#icon-close"></use></svg>
+        </button>
+        <ul class="list mob-menu-list">
+          <li class="mob-menu-item">
+            <a class="link mob-menu-nav-link mob-menu-link-current" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link mob-menu-nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link mob-menu-nav-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <address class="mob-menu-address">
+          <ul class="list mob-menu-contacts-list">
+            <li class="mob-menu-contacts-item tel">
+              <a class="link mob-menu-contacts-link" href="tel:+380961111111">+38 (096) 111 11 11</a>
+            </li>
+            <li class="mob-menu-contacts-item">
+              <a class="link mob-menu-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            
+          </ul>
+        </address>
+        <ul class="mob-soc-card-icons">
+          <li class="mob-soc-icon-item">
+            <a class="mob-soc-card-icon-link link" href="">
+              <svg width="16" height="16" class="mob-soc-card-icon">
+                <use href="./images/our-team/team-icons.svg#icon-instagram"></use>
+              </svg></a>
+          </li>
+          <li class="mob-soc-icon-item">
+            <a class="mob-soc-card-icon-link link" href="">
+              <svg width="16" height="16" class="mob-soc-card-icon">
+                <use href="./images/our-team/team-icons.svg#icon-twitter"></use>
+              </svg></a>
+          </li>
+          <li class="mob-soc-icon-item">
+            <a class="mob-soc-card-icon-link link" href="">
+              <svg width="16" height="16" class="mob-soc-card-icon">
+                <use href="./images/our-team/team-icons.svg#icon-facebook"></use>
+              </svg></a>
+          </li>
+          <li class="mob-soc-icon-item">
+            <a class="mob-soc-card-icon-link link" href="">
+              <svg width="16" height="16" class="temob-socam-card-icon">
+                <use href="./images/our-team/team-icons.svg#icon-linkedin"></use>
+              </svg></a>
+          </li>
+        </ul>
+            </div>
+      </div>
     </header>
     <!-- Main section -->
     <main>
@@ -139,10 +205,13 @@ problem to walk away with the perfect and creative solution.
         <h2 class="wwd-header">What are we doing</h2>
         <ul class="list wwd-img-list wwd-img-list-container">
           <li class="wwd-item">
-            <img
-              class="wwd-img"
-              src="./images/wwd/wwd-mac.jpg"
-              alt="web-apps"
+            <img class="wwd-img"
+            src="./images/wwd/wwd-mac.jpg"
+             alt="mac-apps"
+              srcset="
+              ./images/wwd/wwd-mac.jpg 1x, 
+              ./images/wwd/wwd-mac-2x.jpeg 2x
+              "
               width="360"
               height="300"
             >
@@ -151,6 +220,10 @@ problem to walk away with the perfect and creative solution.
             <img
               class="wwd-img"
               src="./images/wwd/wwd-whatsapp.jpg"
+              srcset="
+              ./images/wwd/wwd-whatsapp.jpg 1x, 
+              ./images/wwd/wwd-whatsapp-2x.jpeg 2x
+              "
               alt="mobile-apps"
               width="360"
               height="300"
@@ -161,6 +234,10 @@ problem to walk away with the perfect and creative solution.
             <img
               class="wwd-img"
               src="./images/wwd/wwd-xiphone.jpg"
+              srcset="
+              ./images/wwd/wwd-xiphone.jpg 1x, 
+              ./images/wwd/wwd-xiphone-2x.jpeg 2x
+              "
               alt="mobile-vers"
               width="360"
               height="300"
@@ -179,6 +256,10 @@ problem to walk away with the perfect and creative solution.
             <img
               class="team-card-img"
               src="./images/our-team/ot1-mark.jpg"
+              srcset="
+              ./images/our-team/opt/ot-mark-guerrero-1x.jpg 1x
+              ./images/our-team/opt/ot-mark-guerrero-2x.jpg 2x
+              "
               alt="Mark-Guerreroo"
               width="264"
               height="260"
@@ -217,6 +298,10 @@ problem to walk away with the perfect and creative solution.
             <img
               class="team-card-img"
               src="./images/our-team/ot2-tom.jpg"
+              srcset="
+              ./images/our-team/opt/ot-tom-ford-1x.jpg 1x
+              ./images/our-team/opt/ot-tom-ford-2x.jpg 2x
+              "
               alt="Tom-Ford"
               width="264"
               height="260"
@@ -256,6 +341,10 @@ problem to walk away with the perfect and creative solution.
             <img
               class="team-card-img"
               src="./images/our-team/ot3-camila.jpg"
+              srcset="
+              ./images/our-team/opt/ot-camila-garcia-1x.jpg 1x
+              ./images/our-team/opt/ot-camila-garcia-2x.jpg 2x
+              "
               alt="Camila-Garcia"
               width="264"
               height="260"
@@ -295,6 +384,10 @@ problem to walk away with the perfect and creative solution.
             <img
               class="team-card-img"
               src="./images/our-team/ot4-daniel.jpg"
+              srcset="
+              ./images/our-team/opt/ot-daniel-wlson-1x.jpg 1x
+              ./images/our-team/opt/ot-daniel-wlson-2x.jpg 2x
+              "
               alt="Daniel-Wilson"
               width="264"
               height="260"
@@ -424,7 +517,7 @@ problem to walk away with the perfect and creative solution.
           </li>
         </ul> 
       </div>
-      <!-- SUBSCRIBER form -->
+         <!-- SUBSCRIBER form -->
       <div class="subscribe-form-wrapper">
         <p class="subscribe-title">Subscribe</p>
 
@@ -440,6 +533,7 @@ problem to walk away with the perfect and creative solution.
       
     </footer>
 
+    <!-- Modal Window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -522,6 +616,7 @@ problem to walk away with the perfect and creative solution.
             name="privacy-policy"
             value="true"
             class="modal-checkbox visually-hidden"
+            required
             >
             <label for="privacy-policy" 
             class="checkbox-text">I accept the terms and conditions of the <a href="" class="privacy-policy-link">Privacy Policy</a>
@@ -530,6 +625,8 @@ problem to walk away with the perfect and creative solution.
           <button type="submit" class="submit-button">Send</button>
         </form>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
+
       </div>
     </div>
   </body>

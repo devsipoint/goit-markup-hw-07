@@ -1,0 +1,183 @@
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* HEADER */
+    .header-contacts-list {
+        display: flex;
+        gap: 40px;
+        align-items: flex-end;
+
+    }
+
+        .contacts-link {
+            display: block;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: calc(24 / 16);
+            letter-spacing: 0.02em;
+        }
+
+       
+
+    /* HERO */
+        .hero {
+            max-width: 1440px;
+            padding-top: 188px;
+            padding-bottom: 188px;
+            margin-right: auto;
+            margin-left: auto;
+    
+            background-color: var(--main-bg-color-dk);
+            /* background-image: linear-gradient(
+        rgba(8, 19, 236, 0.6),
+        rgb(249, 237, 12, 0.7)),  
+        url(../images/hero/hero-bg-img-opt.jpg); */
+            /* GREY */
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero/opt/hero-desk-bg-1x.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    
+        }
+
+                /* Перевизначаємо шлях до 2x зображення,
+        якщо щільність екрану мінімум 2 */
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .hero {
+                    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                            rgba(46, 47, 66, 0.7)),
+                        url(../images/hero/opt/hero-desk-bg-2x.jpeg);
+                }
+            }
+
+        /* FEATURES  */
+    
+    .features-list-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 24px;
+        }
+
+    .features-icon-box {
+            width: 264px;
+            height: 112px;
+            background-color: var(--main-bg-color-cloud);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .features-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: calc(24 / 20);
+            letter-spacing: 0.02em;
+            color: var(--main-text-color-nb);
+            margin-bottom: 8px;
+
+                }
+
+        .features-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: calc(24 / 16);
+            letter-spacing: 0.02em;
+            margin-top: 0px;
+        }
+
+        /* What-we-do */
+        .what-we-do {
+            display: block;
+        }
+
+        /* OUR TEAM SECTION */
+
+    .our-team>.container {
+        width: 1158px;
+        /* outline: 2px solid red;
+    outline-offset: -2px; */
+    }
+
+   .team-card-item {
+       margin: 0px;
+       background-color: var(--main-bg-color-wt);
+       flex-basis: calc((100% - (24px * 3)) / 4);
+   }
+
+   .team-card-list-container {
+       display: flex;
+       gap: 24px;
+
+   }
+
+   /* CUSTOMERS SECTION */
+
+   .customers-list {
+       display: flex;
+       flex-direction: row;
+       align-items: flex-start;
+       padding: 0px;
+       gap: 24px;
+   }
+
+   .customers-item {
+       flex-basis: calc((100% - 24px * 5) / 6);
+   }
+
+   /* .section:nth-child(3) {
+       padding-top: 0;
+   } */
+
+   /* FOOTER */
+   .footer-container {
+       display: flex;
+       flex-wrap: nowrap;
+       justify-content: center;
+   }
+   .subscribe-form-wrapper {
+       /* display: flex; */
+       margin-left: 80px;
+   }
+
+   .footer-social-icons-box {
+       margin-bottom: 0px;
+       margin-top: 0px;
+   }
+   .subscribe-form {
+       display: flex;
+       align-items: center;
+       flex-wrap: nowrap;
+       gap: 24px;
+       margin-top: 16px;
+   }
+   .subscribe-title {
+       text-align:left;
+   }
+    .subscribe-input  {
+        width: 264px;
+        margin-bottom: 0px;
+        opacity: 1;
+        }
+   .subscribe-submit-button {
+    margin: auto;
+   }
+}
