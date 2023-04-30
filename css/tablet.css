@@ -171,7 +171,7 @@
 
          /* OUR TEAM */
     .team-card-list-container {
-        gap: 24px;
+        gap: 64px 24px;
     }
     
     .team-card-item {
@@ -180,6 +180,10 @@
 
         
         /* CUSTOMERS SECTION */
+    .customers-list {
+      gap: 72px 24px;
+                }
+
     .customers-item {
         flex-basis: calc((100% - 24px * 2) / 3);
                 }
@@ -190,7 +194,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 24px;
+        gap: 72px 24px;
         justify-content: center;
     }
     .features-icon-box {

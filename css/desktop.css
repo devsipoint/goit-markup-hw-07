@@ -28,6 +28,10 @@
             letter-spacing: 0.02em;
         }
 
+        .tel {
+            margin-top: 0px;
+            text-align:inherit;
+        }
        
 
     /* HERO */
@@ -143,25 +147,38 @@
        flex-basis: calc((100% - 24px * 5) / 6);
    }
 
-   /* .section:nth-child(3) {
+   .section:nth-child(3) {
        padding-top: 0;
-   } */
+   }
 
    /* FOOTER */
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
    .footer-container {
        display: flex;
        flex-wrap: nowrap;
        justify-content: center;
    }
+
+    .logo-text-box {
+        margin-bottom: 0px;
+}
+
    .subscribe-form-wrapper {
        /* display: flex; */
        margin-left: 80px;
    }
 
    .footer-social-icons-box {
-       margin-bottom: 0px;
-       margin-top: 0px;
-   }
+        margin-left: 120px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        }
+   
    .subscribe-form {
        display: flex;
        align-items: center;
