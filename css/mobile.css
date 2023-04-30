@@ -285,6 +285,7 @@ img {
 .menu-close-btn-icon {
     cursor: pointer;
     fill: var(--brand-color-navi-blue);
+    z-index: 999;
     width: 8px;
     height: 8px;
     position: absolute;
@@ -297,7 +298,8 @@ img {
 }
 
 .menu-close-btn .menu-close-btn-icon {
-    fill: var(--brand-color-navi-blue)
+    fill: var(--brand-color-navi-blue);
+    
 }
 
 .menu-close-btn:hover .menu-close-btn-icon,
