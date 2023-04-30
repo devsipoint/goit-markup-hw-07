@@ -1192,6 +1192,7 @@ input:focus:-ms-input-placeholder {
     /* display: flex;
   justify-content: center;
   align-items: center; */
+    padding: 0px;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -1214,6 +1215,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .close-icon {
+    padding: 0px;
     cursor: pointer;
     position: absolute;
     left: 50%;
