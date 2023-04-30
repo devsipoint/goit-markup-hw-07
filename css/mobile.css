@@ -251,9 +251,9 @@ img {
     width: 24px;
     height: 24px;
     padding: 0;
-    background: #E7E9FC;
-    opacity: 0.1;
-    border: 1px solid #2E2F42;
+    background-color: rgba(231, 233, 252, 0.1);
+    /* opacity: 0.1; */
+    border: 1px solid rgba(46, 47, 66, 0.1);
     /* background-color: var(--btn-text-color-w);
     border: 1px solid var(--border-card-color-cloud); */
     border-radius: 50%;
@@ -275,18 +275,18 @@ img {
 
 .menu-close-btn:hover,
 .menu-close-btn:focus {
-    background-color: var(--btn-bgc-color-ocean);
+    background-color: rgba(57, 108, 217, 1);;
     /* border-color: var(--btn-bgc-color-ocean); */
     outline: none;
-    opacity: 1;
+    /* opacity: 1; */
     border-color: var(--btn-bgc-color-ocean);
 }
 
 
 .menu-close-btn-icon {
     cursor: pointer;
-    fill: var(--brand-color-navi-blue);
-    z-index: 999;
+    fill: rgba(46, 47, 66);
+    opacity: unset;
     width: 8px;
     height: 8px;
     position: absolute;
@@ -298,10 +298,11 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-close-btn .menu-close-btn-icon {
+/* .menu-close-btn .menu-close-btn-icon {
     fill: var(--brand-color-navi-blue);
+    opacity: unset;
     
-}
+} */
 
 .menu-close-btn:hover .menu-close-btn-icon,
 .menu-close-btn:focus .menu-close-btn-icon {
