@@ -394,7 +394,7 @@ img {
 .mob-soc-card-icons {
     display: flex;
     gap: 56px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     }
 
 .mob-soc-icon-item {
@@ -438,7 +438,7 @@ img {
 } */
 
 .hero {
-    max-width: 767px;
+    max-width: 428px;
     padding-top: 112px;
     padding-bottom: 112px;
     margin-right: auto;
