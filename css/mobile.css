@@ -250,6 +250,7 @@ img {
     margin-left: auto;
     width: 24px;
     height: 24px;
+    padding: 0;
     background: #E7E9FC;
     opacity: 0.1;
     border: 1px solid #2E2F42;
@@ -577,7 +578,6 @@ img {
 
 .wwd-img-list-container {
     display: flex;
-
     gap: 24px;
 }
 
